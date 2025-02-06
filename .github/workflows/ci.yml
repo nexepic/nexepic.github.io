@@ -1,4 +1,4 @@
-name: Deploy Next.js to GitHub Pages
+name: Deployment
 
 on:
   push:
@@ -28,7 +28,7 @@ jobs:
         run: yarn build
 
       - name: Upload Artifact
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v3
         with:
           path: ./out
 
