@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Nexepic",
-  description: "Empowering products with advanced code detection solutions.",
+  description: "Where code meets intelligence.",
 };
 
 export default function RootLayout({
