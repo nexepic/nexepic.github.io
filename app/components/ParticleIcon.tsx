@@ -30,11 +30,12 @@ export default function ParticleIcon() {
       const img = new Image();
       img.src = "/favicon.svg";
       img.onload = () => {
-        const S = 256;
+        const S = 1024;
         const off = document.createElement("canvas");
         off.width = S;
         off.height = S;
         const c = off.getContext("2d")!;
+        c.imageSmoothingEnabled = false;
         c.drawImage(img, 0, 0, S, S);
         const data = c.getImageData(0, 0, S, S);
         maskRef.current = data;
